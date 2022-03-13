@@ -27,13 +27,13 @@ adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huosha
 exit
 :bt
 echo open_bluetooth
-adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_bluetooth"
+adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_bluetooth" "active",1
 exit
 :sdotg
 echo open_sd&otg
-adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_sdcard_and_otg"
+adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_sdcard_and_otg" "active",1
 exit
 :usb
 echo open_usb
-adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_connect_usb"
+adb shell am startservice -n com.android.launcher3/com.drupe.swd.launcher.huoshan.mdm.service.ExecuteCmdService --es "cmd" "command_connect_usb" "active",1
 exit
